@@ -1,0 +1,54 @@
+/* PLP Carauserl Banner */
+.banner-image {
+    background-image: url('/unsenimg/download.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 70vh !important;
+}
+
+/* product img change on hover */
+.back_img {
+    display: none;
+}
+
+.product:hover .back_img {
+    display: block;
+    cursor: pointer;
+}
+
+.product:hover .front_img {
+    display: none;
+}
+
+/* NavBar Badge start */
+/* .navbar-nav {
+display: flex;
+align-items: center;
+}
+
+.nav-link {
+margin: 0 10px;
+position: relative;
+}
+
+.badge {
+position: absolute;
+top: -8px;
+right: -10px;
+font-size: 0.75rem;
+} */
+/* NavBar Badge End */
+/* Initially hide the search panel */
+/* .search-panel {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+} */
+
+/* Show the search panel */
+/* .search-panel.show {
+    display: block;
+    transform: translateX(-100%);
+} */
