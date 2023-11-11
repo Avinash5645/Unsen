@@ -5,20 +5,62 @@
     background-position: center top;
     height: 70vh !important;
 }
-
-/* product img change on hover */
-.back_img {
+/* Product Section Start */
+.product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-images {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .product-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-images img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
-}
-
-.product:hover .back_img {
+  }
+  
+  .product:hover .product-images img:first-child {
+    transform: scale(1.1);
+  }
+  
+  .product:hover .product-images img:nth-child(2) {
     display: block;
-    cursor: pointer;
-}
+  }
+  
+  .product .actions {
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    transition: top 0.3s ease;
+  }
+  
+  .product:hover .actions {
+    top: 10px;
+  }
+  
+  .actions button {
+    margin-right: 5px;
+  }
+   /* Product Section End */ 
+  
+  
 
-.product:hover .front_img {
-    display: none;
-}
+  
 
 /* NavBar Badge start */
 /* .navbar-nav {
